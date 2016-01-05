@@ -2,7 +2,7 @@
 
 A small sample to do FFT based 2D cross-correlation on OSX/iOS using Accelerate framework.  Starting point of this sample is [vDSPxcorr](https://github.com/kunalkandekar/vDSPxcorr/) project.
 
-Methods  in Accelerate framework like `vDSP_imgfir` or `vImage_convole` does 2D convolutions. But both methods currently are O(n<sup>2</sup>) algorithms. This sample uses FFT based calculations and hence is O( n log<sub>2</sub>n ) 
+Methods  in Accelerate framework like `vDSP_imgfir` or `vImage_convolve` does 2D convolutions. But both methods currently are O(n<sup>2</sup>) algorithms. This sample uses FFT based calculations and hence is O( n log<sub>2</sub>n ) 
 
 >crosscorr(img, kernel) = invFFT( FFT(img) * CONJUGATE(FFT(kernel)) )
 
