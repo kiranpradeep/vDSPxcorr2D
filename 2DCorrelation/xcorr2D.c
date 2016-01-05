@@ -172,6 +172,8 @@ void xcorr2D( FFTSetup fft_weights, const int img_rows, const int img_cols, cons
             corr[i][corr_cols-1] = img_real[ i * cols/2 + corr_cols/2];
         }
     }
+    
+    free( fft_mem );
 }
 
 void convolve2D_slow( const vImage_Buffer* img, const vImage_Buffer* corr, const float* kernel, const int kernel_rows, const int kernel_cols )
