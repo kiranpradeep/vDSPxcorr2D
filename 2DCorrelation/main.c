@@ -4,8 +4,8 @@
 #include <sys/time.h>
 #include "xcorr2D.h"
 
-#define TEST_PERFORMANCE
-//#define SAMPLE_RUN
+//#define TEST_PERFORMANCE
+#define SAMPLE_RUN
 
 void demo_run_with_results();
 void test_performance();
